@@ -1,0 +1,10 @@
+schema_version: 20180708
+name: tf-docker
+version: 0.0.76
+runtime: docker
+#format: http-stream
+memory: 512
+triggers:
+- name: tf-docker-trigger
+  type: http
+  source: /tf-docker

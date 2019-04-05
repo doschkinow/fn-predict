@@ -1,0 +1,10 @@
+schema_version: 20180708
+name: octave-docker
+version: 0.0.71
+runtime: docker
+format: http-stream
+memory: 512
+triggers:
+- name: octave-docker-trigger
+  type: http
+  source: /octave-docker
