@@ -54,6 +54,7 @@ the time to start the function container and to execute the python initializatio
 
 To test tf-python-fdk:
 cd tf-python-fdk
+fn -v deploy --no-bump --app predict --local
 time curl -d `cat ../vier-base64-encoded.txt` http://localhost:8080/t/predict/tf-python-fdk
 
 result (cold function call, if called first time):
